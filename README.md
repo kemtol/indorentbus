@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+## Jekyll Base ##
+This is a base that will get you started with jekyll, created by Daniel McGraw (@danielmcgraw).
 
-You can use the [editor on GitHub](https://github.com/kemtol/indorentbus/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Usage ###
+Check out my [post series](http://danielmcgraw.com/2011/04/14/The-Ultimate-Guide-To-Getting-Started-With-Jekyll-Part-1/) on how to use Jekyll Base to create your own Jekyll powered blog.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Structure ###
+<pre>
+.  
+|-- .gitignore  
+|-- README  
+|-- _config.yml  
+|-- _layouts  
+|   |-- layout.html  
+|   `-- post.html  
+|-- _posts  
+|   `-- 1985-10-26-Test-Post.md  
+`-- index.html  
+</pre>
 
-### Markdown
+Lets take a look at what each of these do.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### .gitignore ###
+This file is not manditory for a proper Jekyll install, but is useful if you are like me and use a mac (ignore the DS_Store) or emacs (ignore the autosave files). If you have any other files or folders that need ignoring toss them in here.
 
-```markdown
-Syntax highlighted code block
+### README ###
+This file is not manditory for a proper Jekyll install, but is recomended by GitHub for all repositories. Toss a simple description of your site and its make up in here if you would like.
 
-# Header 1
-## Header 2
-### Header 3
+### _config.yml ###
+This is where you will be putting your Jekyll configuration options. If this file is omitted Jekyll will use its defualts to build your site. You can find the configuration options and default configuration [here](https://github.com/mojombo/jekyll/wiki/configuration).
 
-- Bulleted
-- List
+### _layouts ###
+This folder is where you will be putting all your layout templates. I have added layout.html and post.html so you can get an idea of how they are strutured and used. 
 
-1. Numbered
-2. List
+#### layout.html ####
+This is the base template for our site. There are no naming conventions, but if you choose to change this file's name make sure you update all the layout references in your file's YAML Front Matter blocks.
 
-**Bold** and _Italic_ and `Code` text
+#### post.html ####
+This is the bast template for each of our posts. Again there are no naming conventions, but make sure you update the required files YAML Front Matter blocks if you do change its name. To learn more about the use of YAML Front Matter check out [this page](https://github.com/mojombo/jekyll/wiki/yaml-front-matter).
 
-[Link](url) and ![Image](src)
-```
+### _posts ###
+This is your posts folder. You will be putting your blog posts in here. Notice the naming convention that is used. You will want to name your files with the the publish date preceeding the posts title all seperated by dashes (Year-Month-Day-Title-Of-The-Post.md). The post date that you see is pulled straight from this filename so make sure you lable your files right.
+ 
+#### 1985-10-26-Test-Post.md ####
+This is a simple blog post. Notice that we are using markdown. To learn more about markdown check out the [markdown syntax documentation](http://daringfireball.net/projects/markdown/syntax). Also notice that there is YAML Front Matter in this file specifying the layout it will use and the title of the post. Layout is one of a couple predefined global variables. You can also specify custom variables in the YAML Front Matter. To learn more about the use of YAML Front Matter check out [this page](https://github.com/mojombo/jekyll/wiki/yaml-front-matter).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kemtol/indorentbus/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### index.html ###
+This is used to render your sites index. It is essentially a post loop wrapped in your base layout.
