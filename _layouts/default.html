@@ -27,7 +27,7 @@
     <h1><a href="{{ site.url }}">FLEET MANAGEMENT</a></h1>
     <a href="{{ site.url }}/armada/"></a>
     <a href="{{ site.url }}/orders/"></a>
-    <a href="{{ site.url }}/signout/"></a>
+    <a onclick="firebase.auth().signOut();window.location.replace('{{ site.url }}/home/');return false" href=""></a>
   </header>
     
   <!-- Container where we'll display the user details -->
