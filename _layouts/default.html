@@ -3,10 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>IRB Fleet Management</title><script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="{{site.url}}/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="{{site.url}}/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="{{site.url}}/css/font-awesome.css" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- update the version number as needed -->
+    <!-- Mainly scripts -->
+    <script src="{{site.url}}/js/jquery.metisMenu.js"></script>
+    <script src="{{site.url}}/js/jquery.slimscroll.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <link href="{{site.url}}/css/custom.css" rel="stylesheet">
+    <script src="{{site.url}}/js/custom.js"></script>
+    <script src="{{site.url}}/js/screenfull.js"></script>
+    <script>
+    $(function(){
+      $('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
+      if (!screenfull.enabled) {
+        return false;
+      }
+      $('#toggle').click(function () {
+        screenfull.toggle($('#container')[0]);
+      });
+    });
+    </script>
+    <!--skycons-icons-->
+    <script src="{{site.url}}/js/skycons.js"></script>
+    <!--//skycons-icons-->
+    <!--FIREBASE START HERE update the version number as needed -->
     <script defer src="https://indorentbus-e66dc.firebaseapp.com/__/firebase/4.5.2/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
     <script defer src="https://indorentbus-e66dc.firebaseapp.com/__/firebase/4.5.2/firebase-auth.js"></script>
