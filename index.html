@@ -174,13 +174,12 @@ title: Jekyll Base
             }
             // [END_EXCLUDE]
           } else {
-		var redir = "{{ site.url }}/home/";
             // User is signed out.
             // [START_EXCLUDE]
-            document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-            document.getElementById('quickstart-sign-in').textContent = 'Sign in';
-            document.getElementById('quickstart-account-details').textContent = 'null';
-		window.location = redir;
+		document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
+		document.getElementById('quickstart-sign-in').textContent = 'Sign in';
+		document.getElementById('quickstart-account-details').textContent = 'null';
+		window.location.replace("{{ site.url }}/home/");
             // [END_EXCLUDE]
           }
           // [START_EXCLUDE silent]
