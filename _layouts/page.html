@@ -9,7 +9,14 @@ layout: default
 </div>
 
 <script type="text/javascript">
+//login apa tidak
 function initApp() {
-  return;
+  firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        alert("login");
+      }else{
+        alert("logout");
+      }
+  });
 }
 </script>
