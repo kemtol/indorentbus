@@ -172,6 +172,7 @@ title: Jekyll Base
             if (!emailVerified) {
               document.getElementById('quickstart-verify-email').disabled = false;
             }
+		window.location.replace("{{ site.url }}/home/");
             // [END_EXCLUDE]
           } else {
             // User is signed out.
@@ -179,7 +180,6 @@ title: Jekyll Base
 		document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
 		document.getElementById('quickstart-sign-in').textContent = 'Sign in';
 		document.getElementById('quickstart-account-details').textContent = 'null';
-		window.location.replace("{{ site.url }}/home/");
             // [END_EXCLUDE]
           }
           // [START_EXCLUDE silent]
