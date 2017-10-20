@@ -25,7 +25,7 @@ function initApp() {
           document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
           document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
       }else{
-        window.location = "{{ site.ur l}}";
+        window.location = "{{ site.url }}";
       }
   });
 }
