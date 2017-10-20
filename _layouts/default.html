@@ -17,8 +17,20 @@
     <script defer src="https://indorentbus-e66dc.firebaseapp.com/__/firebase/4.5.2/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="https://indorentbus-e66dc.firebaseapp.com/__/firebase/init.js"></script>
+    <style>
+      #auth-log{
+        background:yellow;
+      }
+    </style>
   </head>
   <body>
+    
+  <!-- Container where we'll display the user details -->
+  <div id="auth-log">
+    Firebase sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+    <div>Firebase auth <code>currentUser</code> object value:</div>
+    <pre><code id="quickstart-account-details">null</code></pre>
+  </div>
     
     {{ content }}
     
