@@ -217,10 +217,10 @@ nav.top1.navbar.navbar-default.navbar-static-top {
 }
 h1 a.navbar-brand {
 	color: #fff !important;
-	font-size: 30px;
+	font-size: 1.25rem;
 	font-weight: 500;
-    padding: 20px 0px;
-    background: #d95459;
+    padding: 20px;
+    background: #183955;
     text-align: center;
 	width:248px;
 	height: 60px;
@@ -228,7 +228,7 @@ h1 a.navbar-brand {
 }
 .navbar-default .navbar-brand:hover {
     color: #fff;
-    background-color: #d95459;
+    background-color: #133049;
 }
 .navbar-right {
   margin-right: 10px !important;
