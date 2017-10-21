@@ -2094,9 +2094,14 @@ tr.table-row {
     text-align: center;
 }
 .copy{
-	background:#fff;
-	text-align:center;
-	padding:1.5em 0;
+	background: #fff;
+    text-align: center;
+    padding: 1.5em 0;
+    width: 100vw;
+    left: 0;
+    top: auto;
+    position: absolute;
+    border-top: 1px solid #eee;
 }
 .copy p, .copy-right p{
 	font-size:0.85em;
