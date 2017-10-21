@@ -398,6 +398,7 @@ nav.navbar.navbar-static-top {
 }
 .drop-men {
     float: right;
+margin-right:1rem;
 }
 .dropdown-at {
     padding: 0 !important;
