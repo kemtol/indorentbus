@@ -11,13 +11,13 @@ title: Jekyll Base
 	<br/><br/>
 	<input style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
 	<br/><br/>
-	<input style="display:inline;width:auto;" type="text" id="name" name="name" placeholder="Nama"/>
+	<input class="for-signup" style="display:inline;width:auto;" type="text" id="name" name="name" placeholder="Nama"/>
 	<br/><br/>
 	<button disabled id="quickstart-sign-in" name="signin">Sign In</button>
 	&nbsp;&nbsp;&nbsp;
-	<button id="quickstart-sign-up" name="signup">Sign Up</button>
+	<button class="for-signup" id="quickstart-sign-up" name="signup">Sign Up</button>
 	&nbsp;&nbsp;&nbsp;
-	<button disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+	<button class="for-signup" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
 	&nbsp;&nbsp;&nbsp;
 	<button id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
 </div>
@@ -41,6 +41,7 @@ title: Jekyll Base
 		width: 100%;
 		color: #fff;
 	}
+	.for-signup{display:none}
 </style>
 <script type="text/javascript">
 	$("#nav-menu").hide();
