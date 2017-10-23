@@ -2235,7 +2235,7 @@ canvas#polarArea, canvas#radar, canvas#doughnut {
     margin: 1em;
 }
 .content-top {
-    padding: 1em 0 0;
+    padding: 1rem 0;
 }
 canvas#bar1, canvas#line1 {
     width: 444px !important;
