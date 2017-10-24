@@ -26,7 +26,7 @@ jQuery(document).ready(function($)
 	
 	types.on('child_added', snap => {
 		var option = '<option value="'+snap.key+'" id="'+snap.key+'">'+snap.val()+'</option>';
-		$('#jenisBis').append(checkBox);
+		$('#jenisBis').append(option);
 	});
 
 	types.on('child_changed', snap => {
