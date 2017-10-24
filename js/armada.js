@@ -49,11 +49,9 @@ jQuery(document).ready(function($)
 			'fleet_engine'		: $('#fleet_engine').val(),
 		};
 
-		$('.facilities').find('checkbox').each(function(e){
-			if($(this).prop('checked'))
-			{
-				alert($(this).val());
-			}
+		var checked_facility = $('input[name=fleet_facilities]:checked');
+		checked_facility.each(function(){
+			console.log($(this).val());
 		});
 
 		saveArmada(fleet);
