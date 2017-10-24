@@ -49,6 +49,13 @@ jQuery(document).ready(function($)
 			'fleet_engine'		: $('#fleet_engine').val(),
 		};
 
+		$('.facilities').find('checkbox').each(function(e){
+			if($(this).prop('checked'))
+			{
+				alert($(this).val());
+			}
+		});
+
 		saveArmada(fleet);
 
 		return false;
