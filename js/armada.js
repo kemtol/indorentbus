@@ -7,7 +7,7 @@ jQuery(document).ready(function($)
 	facilities.on('child_added', snap => {
 		var checkBox = '<div class="checkbox" id="'+snap.key+'Parent">';
 		checkBox += '	<label>';
-		checkBox += '		<input type="checkbox" name="fleet_facilities" value="'+snap.key+'"/> <span id="'+snap.key+'">'+snap.val()+'</span>';
+		checkBox += '		<input type="checkbox" name="fleet_facilities" value="'+snap.val()+'"/> <span id="'+snap.key+'">'+snap.val()+'</span>';
 		checkBox += '	</label>';
 		checkBox += '</div>';
 		$('.facilities').append(checkBox);
