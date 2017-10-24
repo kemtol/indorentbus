@@ -39,7 +39,7 @@ jQuery(document).ready(function($)
 		$(optionRemoved).remove();
 	});
 
-	$(document).on('submit','form',function(e){
+	$('#newFleet').submit(function(event){
 		alert($(this).serialize());
 		return false;
 	});
