@@ -10,12 +10,11 @@ jQuery(document).ready(function($)
 		checkBox += '	</label>';
 		checkBox += '</div>';
 		$('.facilities').append(checkBox);
-		console.log(snap)
 	});
 
 	facilities.on('child_changed', snap => {
 		var liChanged = '#'+snap.key;
-		$(liChanged).text(snap.val();
+		$(liChanged).text(snap.val());
 	});
 
 	facilities.on('child_removed', snap => {
