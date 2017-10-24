@@ -1,4 +1,9 @@
 jQuery(document).ready(function($)
 {
-	alert('armada');
+	var dbRef = firebase.database().ref();
+	var facilities = dbRef.child('fleet_facilities');
+	
+	facilities.on('value', snap => {
+		console.log(snap.val());	
+	});
 });
