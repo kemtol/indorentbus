@@ -4,6 +4,12 @@ jQuery(document).ready(function($)
 	var facilities = dbRef.child('fleet_facilities');
 	
 	facilities.on('child_added', snap => {
-		console.log(snap.val());	
+		var checkBox = '<div class="checkbox">';
+		checkBox += '	<label>';
+		checkbox += '		<input type="'+snap.val()+'" />';
+		checkBox += '	</label>';
+		checkBox += '</div>';
+		console.log(snap);	
+		$('.facilities').append(checkBox);
 	});
 });
