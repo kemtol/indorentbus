@@ -38,4 +38,9 @@ jQuery(document).ready(function($)
 		var optionRemoved = '#'+snap.key;
 		$(optionRemoved).remove();
 	});
+
+	$('form').submit(funtion(e){
+		alert($(this).serialize());
+	});
+
 });
