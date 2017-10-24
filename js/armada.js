@@ -7,7 +7,7 @@ jQuery(document).ready(function($)
 	facilities.on('child_added', snap => {
 		var checkBox = '<div class="checkbox" id="'+snap.key+'Parent">';
 		checkBox += '	<label>';
-		checkBox += '		<input type="checkbox" name="facilities[]" value="'+snap.key+'"/> <span id="'+snap.key+'">'+snap.val()+'</span>';
+		checkBox += '		<input type="checkbox" name="fleet_facilities" value="'+snap.key+'"/> <span id="'+snap.key+'">'+snap.val()+'</span>';
 		checkBox += '	</label>';
 		checkBox += '</div>';
 		$('.facilities').append(checkBox);
@@ -40,8 +40,24 @@ jQuery(document).ready(function($)
 	});
 
 	$('#newFleet').submit(function(event){
-		console.log($(this).serialize());
+		var fleet = 
+		{
+			'fleet_no'			: $('#fleet_no').val(),
+			'fleet_type'		: $('#fleet_type').val(),
+			'fleet_seat'		: $('#fleet_seat').val(),
+			'fleet_year'		: $('#fleet_year').val(),
+			'fleet_engine'		: $('#fleet_engine').val(),
+		};
+
+		saveArmada(fleet);
+
 		return false;
 	});
 
 });
+
+function saveArmada(fleet)
+{
+
+	console.log(fleet);
+}
