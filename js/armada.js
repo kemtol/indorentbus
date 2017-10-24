@@ -50,10 +50,14 @@ jQuery(document).ready(function($)
 		};
 
 		var checked_facility = $('input[name=fleet_facilities]:checked');
-		checked_facility.each(function(){
-			fleet.fleet_facilities.push($(this).val());
-		});
-
+		if(checked_facility.length>0)
+		{
+			facilities = [];
+			checked_facility.each(function(){
+				facilities.push($(this).val());
+			});
+			fleet.fleet_facilities = facilities;
+		}
 		saveArmada(fleet);
 
 		return false;
