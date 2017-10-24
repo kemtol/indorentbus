@@ -70,7 +70,7 @@
 								<li><a href="#" class="view">View all messages</a> </li>
 							</ul>
 						</li>-->
-						<li class="dropdown"> <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Nama Karyawan<i class="caret"></i></span><img src="{{ site.url }}/images/wo.jpg"></a>
+						<li class="dropdown"> <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret"><span id="userNameMenu">Nama Karyawan</span><i class="caret"></i></span><img src="{{ site.url }}/images/wo.jpg"></a>
 							<ul class="dropdown-menu " role="menu">
 								<li><a href="/profile/"><i class="fa fa-user"></i>Ubah Profile</a> </li>
 								<li><a onclick="firebase.auth().signOut();window.location.replace('{{ site.url }}');return false" href=""><i class="fa fa-sign-out"></i>Sign Out</a> </li>
