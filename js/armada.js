@@ -41,6 +41,7 @@ jQuery(document).ready(function($)
 
 	$('form').submit(function(e){
 		alert($(this).serialize());
+		return false;
 	});
 
 });
