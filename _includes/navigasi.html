@@ -73,7 +73,7 @@
 						<li class="dropdown"> <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Nama Karyawan<i class="caret"></i></span><img src="{{ site.url }}/images/wo.jpg"></a>
 							<ul class="dropdown-menu " role="menu">
 								<li><a href="/profile/"><i class="fa fa-user"></i>Ubah Profile</a> </li>
-								<li><a onclick="firebase.auth().signOut();window.location.replace('{{ site.url }}');return false" href=""><i class="fa fa-clipboard"></i>Sign Out</a> </li>
+								<li><a onclick="firebase.auth().signOut();window.location.replace('{{ site.url }}');return false" href=""><i class="fa fa-sign-out"></i>Sign Out</a> </li>
 							</ul>
 						</li>
 					</ul>
@@ -85,10 +85,10 @@
 						<ul class="nav" id="side-menu">
 							<li> <a href="{{ site.url }}/home/" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a> </li>
 							<li>
-								<a href="#" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">Armada</span><span class="fa arrow"></span></a>
+								<a href="#" class=" hvr-bounce-to-right"><i class="fa fa-car nav_icon"></i> <span class="nav-label">Armada</span><span class="fa arrow"></span></a>
 								<ul class="nav nav-second-level">
 									<li> <a href="{{ site.url }}/armada/" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon "></i><span class="nav-label">List Armada</span> </a> </li>
-									<li> <a href="{{ site.url }}/armada/tambah/" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon "></i><span class="nav-label">Tambah Armada</span> </a> </li>
+									<li> <a href="{{ site.url }}/armada/tambah/" class=" hvr-bounce-to-right"><i class="fa fa-plus nav_icon "></i><span class="nav-label">Tambah Armada</span> </a> </li>
 								</ul>
 							</li>
 							<li> <a href="{{ site.url }}/orders/" class=" hvr-bounce-to-right"><i class="fa fa-list nav_icon "></i><span class="nav-label">Order</span> </a> </li>
