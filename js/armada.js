@@ -40,7 +40,7 @@ jQuery(document).ready(function($)
 	});
 
 	$('#newFleet').submit(function(event){
-		alert($(this).serialize());
+		console.log($(this).serialize());
 		return false;
 	});
 
