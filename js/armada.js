@@ -2,6 +2,7 @@ jQuery(document).ready(function($)
 {
 	var dbRef = firebase.database().ref();
 	var facilities = dbRef.child('fleet_facilities');
+	var types = dbRef.child('fleet_type');
 	
 	facilities.on('child_added', snap => {
 		var checkBox = '<div class="checkbox" id="'+snap.key+'Parent">';
@@ -20,5 +21,21 @@ jQuery(document).ready(function($)
 	facilities.on('child_removed', snap => {
 		var liRemoved = '#'+snap.key+'Parent';
 		$(liRemoved).remove();
+	});
+
+	
+	types.on('child_added', snap => {
+		var option = '<option value="'+snap.key+'" id="'+snap.key+'">'+snap.val()+'</option>';
+		$('#jenisBis').append(checkBox);
+	});
+
+	types.on('child_changed', snap => {
+		var optionChanged = '#'+snap.key;
+		$(optionChanged).text(snap.val());
+	});
+
+	types.on('child_removed', snap => {
+		var optionRemoved = '#'+snap.key;
+		$(optionRemoved).remove();
 	});
 });
