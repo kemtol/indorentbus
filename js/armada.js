@@ -39,7 +39,7 @@ jQuery(document).ready(function($)
 		$(optionRemoved).remove();
 	});
 
-	$('form').submit(function(e){
+	$(document).on('submit','form',(function(e){
 		alert($(this).serialize());
 		return false;
 	});
