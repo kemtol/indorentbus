@@ -9,7 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
+// initiate jQuery
 jQuery(document).ready(function($){
 
-	alert('test alert');
 });
