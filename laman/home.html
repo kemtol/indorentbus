@@ -142,8 +142,8 @@ permalink: /home/
 <!-- start mid content -->
 <div class="content-mid" class="hide">
 	<!-- CALENDER WIDGET -->
-	<div class="col-md-5">
-		<div class="">
+	<div class="col-md-8">
+		<div style="border-radius:4px;overflow:hidden;">
 			<div id="pit-scheduler"></div>
 			<style>#pit-scheduler .row{margin:0px}</style>
 			<script>
@@ -151,7 +151,7 @@ permalink: /home/
 				$("#pit-scheduler").pitScheduler({
 				    locale: 'en',
 				    defaultDisplay: 'months',
-				    hideEmptyLines: true,
+				    hideEmptyLines: false,
 				    disableLabelsMovement: false,
 				    defaultGroupName: 'Default group',
 				    defaultDate: '2016-09-01 16:30',
@@ -317,7 +317,7 @@ permalink: /home/
 	</div>
 	<!-- EO CALENDER WIDGET -->
 	<!-- WEATHER WIDGET -->
-	<div class="col-md-7">
+	<div class="col-md-4">
 		<div class="weather">
 			<div class="weather-top">
 				<div class="weather-top-left">
