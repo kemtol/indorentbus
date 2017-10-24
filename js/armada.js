@@ -26,7 +26,7 @@ jQuery(document).ready(function($)
 	
 	types.on('child_added', snap => {
 		var option = '<option value="'+snap.val()+'" id="'+snap.key+'">'+snap.val()+'</option>';
-		$('#jenisBis').append(option);
+		$('#fleet_type').append(option);
 	});
 
 	types.on('child_changed', snap => {
