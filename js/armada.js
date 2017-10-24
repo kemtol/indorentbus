@@ -25,7 +25,7 @@ jQuery(document).ready(function($)
 
 	
 	types.on('child_added', snap => {
-		var option = '<option value="'+snap.key+'" id="'+snap.key+'">'+snap.val()+'</option>';
+		var option = '<option value="'+snap.val()+'" id="'+snap.key+'">'+snap.val()+'</option>';
 		$('#jenisBis').append(option);
 	});
 
@@ -51,7 +51,7 @@ jQuery(document).ready(function($)
 
 		var checked_facility = $('input[name=fleet_facilities]:checked');
 		checked_facility.each(function(){
-			console.log($(this).val());
+			fleet.fleet_facilities.push($(this).val());
 		});
 
 		saveArmada(fleet);
