@@ -423,6 +423,14 @@ permalink: /home/
 
 <!-- start bottom content -->
 <div class="content-bottom">
+	<div class="col-md-12">
+		<div id="dp"></div>
+	</div>
 	<div class="clearfix"> </div>
+	<script type="text/javascript">
+		var dp = new DayPilot.Scheduler("dp");
+		dp.viewType = "Days";
+		dp.init();
+	</script>
 </div>
 <!--// bottom content -->
