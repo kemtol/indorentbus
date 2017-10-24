@@ -21,23 +21,23 @@ permalink: /armada/tambah/
 			<h3 id="forms-example" class="">Data Kendaraan</h3>
 			<div class="form-group">
 				<label for="nomerPlat">Nomor Plat</label>
-				<input type="text" class="form-control" id="nomerPlat" placeholder="No Plat">
+				<input type="text" class="form-control" id="nomerPlat" placeholder="No Plat" name="fleet_no">
 			</div>
 			<div class="form-group">
 				<label for="jenisBis">Jenis</label>
-				<select name="jenisBis" id="jenisBis" class="form-control1"></select>
+				<select name="fleet_type" id="jenisBis" class="form-control1"></select>
 			</div>
 			<div class="form-group">
 				<label for="seatBis">Seat</label>
-				<input type="text" class="form-control" id="seatBis" placeholder="Jumlah Seat">
+				<input type="text" class="form-control" id="seatBis" placeholder="Jumlah Seat" name="fleet_seat">
 			</div>
 			<div class="form-group">
 				<label for="tahunPembuatanBis">Tahun Pembuatan</label>
-				<input type="text" class="form-control" id="tahunPembuatan" placeholder="Tahun Pembuatan">
+				<input type="text" class="form-control" id="tahunPembuatan" placeholder="Tahun Pembuatan" name="fleet_year">
 			</div>
 			<div class="form-group">
 				<label for="jenisMesin">Jenis Mesin</label>
-				<input type="text" class="form-control" id="jenisMesin" placeholder="Jenis Mesin">
+				<input type="text" class="form-control" id="jenisMesin" placeholder="Jenis Mesin" name="fleet_engine">
 			</div>
 		</div>
 	</div>
@@ -51,12 +51,13 @@ permalink: /armada/tambah/
 			<h3 id="forms-example" class="">Gambar Kendaraan</h3>
 			<div class="form-group">
 				<label for="exampleInputFile">Upload Gambar</label>
-				<input type="file" id="exampleInputFile">
+				<input type="file" id="exampleInputFile" name="fleet_image">
 			</div>
 		</div>
 	</div>
 	<div class="col-xs-12 col-lg-8 grid-form">
 		<div class="col-xs-12 content-top-1 quick-btn">
+			<input id="saveForm" name="saveForm" type="submit" value="TAMBAH ARMADA">
 			<a href="">TAMBAH ARMADA</a>
 		</div>
 	</div>
