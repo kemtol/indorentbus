@@ -143,11 +143,11 @@ permalink: /home/
 <div class="content-mid" class="hide">
 	<!-- CALENDER WIDGET -->
 	<div class="col-md-8">
-		<div style="border-radius:4px;overflow:hidden;background: #fff;">
+		<div style="border-radius:4px;overflow:hidden;background: #fff;box-shadow: 1px 0px 5px #ddd;">
 			<div id="pit-scheduler"></div>
 			<style>
 				.progress-bar-striped, .progress-striped .progress-bar{background-image:none}
-				#pit-scheduler{margin-bottom: 1rem;}
+				#pit-scheduler{border-bottom: 0.5rem solid #eee;}
 				#pit-scheduler .row{margin:0px;border-bottom: 3px solid #eee;}
 				.pts-column-title-container,.pts-corner-mask,.pts-line-title-container{background-color:#fff}
 				.pts-header{background-color:#fff}
@@ -158,6 +158,8 @@ permalink: /home/
 				.pts-group-user,.pts-main-group-user{border-bottom:1px solid #eee}
 				.pts-line-title-container, .pts-corner-mask{border-right: 1px solid #fff;background: #f9f9f9;}
 				.pts-line-marker.complete,.pts-line-marker.start,.pts-line-marker.end,.pts-line-marker.middle{border-radius:0px}
+				#header-datetimepicker span.input-group-addon, .pts-btn-day-view, .pts-btn-list-view, .pts-btn-month-view, .pts-btn-next, .pts-btn-previous,.pts-column-element[data-date]:hover{background:#eee}
+				
 			</style>
 			<script>
 			    $(document).ready(function () {
