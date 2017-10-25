@@ -145,7 +145,9 @@ permalink: /home/
 	<div class="col-md-8">
 		<div style="border-radius:4px;overflow:hidden;background: #00BCD4;">
 			<div id="pit-scheduler"></div>
-			<style>#pit-scheduler .row{margin:0px;margin-bottom: 1rem;border-bottom: 3px solid;}</style>
+			<style>
+				#pit-scheduler .row{margin:0px;margin-bottom: 1rem;border-bottom: 3px solid;}
+			</style>
 			<script>
 			    $(document).ready(function () {
 				$("#pit-scheduler").pitScheduler({
@@ -155,7 +157,6 @@ permalink: /home/
 				    disableLabelsMovement: true,
 				    defaultGroupName: 'Default group',
 				    defaultDate: '2016-09-01 16:30',
-				defaultColor: #1ABC9C,
 				    disableNotifications: false,
 				    notificationDuration: 4000,
 				    hideSpinner: true,
