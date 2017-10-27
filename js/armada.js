@@ -92,6 +92,12 @@ jQuery(document).ready(function($)
 		return false;
 	});
 
+	$(document).on('change','.fleet_image',function(e)
+	{
+		var target = $(this).parent().find('#preview');
+		readURL(this,target);
+	});
+
 	$(document).on('change','.required',function(e)
 	{
 		$(this).parent().removeClass('has-warning').removeClass('has-feedback');
@@ -116,4 +122,16 @@ function saveArmada(fleet)
 	};
 
 	console.log(fleetData);
+}
+
+function readURL(input,target) {
+	if (input.files && input.files[0]) {
+		var reader = new FileReader();
+		
+		reader.onload = function (e) {
+			$(target).attr('src',e.target.result);
+		}
+		
+		reader.readAsDataURL(input.files[0]);
+	}
 }
