@@ -129,7 +129,9 @@ function saveArmada(fleet)
 	  updates['/fleets/' + newFleetKey] = fleetData;
 	  updates['/user-fleets/' + uid + '/' + newFleetKey] = fleetData;
 
-	  return firebase.database().ref().update(updates);
+	  firebase.database().ref().update(updates);
+
+	  window.location = "{{ site.url }}/armada/tambah/?success=1";
 }
 
 function readURL(input,target) {
