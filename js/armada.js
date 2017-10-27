@@ -47,6 +47,8 @@ jQuery(document).ready(function($)
 			'fleet_seat'		: $('#fleet_seat').val(),
 			'fleet_year'		: $('#fleet_year').val(),
 			'fleet_engine'		: $('#fleet_engine').val(),
+			'fleet_stnk'		: $('#fleet_stnk').val(),
+			'fleet_no_rangka'	: $('#fleet_no_rangka').val(),
 		};
 
 
@@ -107,6 +109,8 @@ function saveArmada(fleet)
 		fleet_seat		: fleet.fleet_seat,
 		fleet_year		: fleet.fleet_year,
 		fleet_engine	: fleet.fleet_engine,
+		fleet_stnk		: fleet.fleet_stnk,
+		fleet_no_rangka	: fleet.fleet_no_rangka,
 	};
 
 	console.log(fleetData);
