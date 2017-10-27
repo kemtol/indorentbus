@@ -80,6 +80,13 @@ jQuery(document).ready(function($)
 		return false;
 	});
 
+	$(document).on('change','.required',function(e)
+	{
+		$(this).parent().removeClass('has-warning').removeClass('has-feedback');
+		$(this).parent().find('.form-control-feedback').addClass('hidden');
+		$(this).parent().find('.help-block').remove();
+	});
+
 });
 
 function saveArmada(fleet)
