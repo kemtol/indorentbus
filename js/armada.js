@@ -67,6 +67,8 @@ jQuery(document).ready(function($)
 
 function saveArmada(fleet)
 {
+	console.log(user);
+	var fleetData = {
 
-	console.log(fleet);
+	};
 }
