@@ -92,7 +92,7 @@ jQuery(document).ready(function($)
 		return false;
 	});
 
-	$(document).on('change','.fleet_image',function(e)
+	$(document).on('change','#fleet_image',function(e)
 	{
 		var target = $(this).parent().find('#preview');
 		readURL(this,target);
