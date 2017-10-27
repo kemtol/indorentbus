@@ -7,10 +7,12 @@ layout: default
 </div>
 
 <script type="text/javascript">
+  var currentUser;
 //login apa tidak
 function initApp() {
   firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
+          var currentUser = user;
           // User is signed in.
           var displayName = user.displayName;
           var email = user.email;
