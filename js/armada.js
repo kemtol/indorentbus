@@ -124,15 +124,17 @@ function saveArmada(fleet)
 
 	console.log(fleetData);
 
+	firebase.database().ref('fleets').set(fleetData);
+
 	// Get a key for a new F;eet.
-  	var newFleetKey = firebase.database().ref().child('fleets').push().key;
+  	//var newFleetKey = firebase.database().ref().child('fleets').push().key;
 
   	// Write the new post's data simultaneously in the posts list and the user's post list.
-	  var updates = {};
-	  updates['/fleets/' + newFleetKey] = fleetData;
-	  updates['/user-fleets/' + uid + '/' + newFleetKey] = fleetData;
+	// var updates = {};
+	// updates['/fleets/' + newFleetKey] = fleetData;
+	// updates['/user-fleets/' + uid + '/' + newFleetKey] = fleetData;
 
-	  firebase.database().ref().update(updates);
+	//firebase.database().ref().update(updates);
 
 	  //window.location = "{{ site.url }}/armada/tambah/?success=1";
 }
