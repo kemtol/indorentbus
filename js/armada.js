@@ -124,11 +124,11 @@ function saveArmada(fleet)
 
 	console.log(fleetData);
 
-	firebase.database().ref('fleets').set(fleetData);
+	//firebase.database().ref('fleets').set(fleetData);
 
 	// Get a key for a new F;eet.
-  	//var newFleetKey = firebase.database().ref().child('fleets').push().key;
-
+  	var newFleetKey = firebase.database().ref().child('fleets').push().key;
+  	console.log(newFleetKey);
   	// Write the new post's data simultaneously in the posts list and the user's post list.
 	// var updates = {};
 	// updates['/fleets/' + newFleetKey] = fleetData;
