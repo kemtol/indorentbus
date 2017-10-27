@@ -58,7 +58,19 @@ jQuery(document).ready(function($)
 			});
 			fleet.fleet_facilities = facilities;
 		}
-		saveArmada(fleet);
+
+
+		var danger = false;
+		$('.required').each(function(){
+			if($(this).val()=='')
+			{
+				console.log($(this).parent().find('label').text());
+				danger = true;
+				return false;
+			}
+		});
+
+		if(!danger)	saveArmada(fleet);
 
 		return false;
 	});
