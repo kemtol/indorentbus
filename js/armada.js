@@ -76,7 +76,11 @@ jQuery(document).ready(function($)
 		else
 		{
 			$('.facilities').append('<span class="help-block" style="font-size:11px;">Fasilitas harus dipilih minimal 1.</span>');
-			if(!danger) danger = true;
+			if(!danger) 
+			{
+				($'#forms-activities').focus();
+				danger = true;
+			}
 		}
 
 		if(!danger)	saveArmada(fleet);
