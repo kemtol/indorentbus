@@ -56,7 +56,7 @@ jQuery(document).ready(function($)
 			{
 				$(this).parent().addClass('has-warning has-feedback');
 				$(this).parent().find('.form-control-feedback').removeClass('hidden');
-				$(this).parent().append('<span class="help-block" style="font-size:11px;">'+$(this).parent().find('label').text()+' harus diisi.</span>');
+				if($(this).parent().find('.help-block').length==0) $(this).parent().append('<span class="help-block" style="font-size:11px;">'+$(this).parent().find('label').text()+' harus diisi.</span>');
 				if(!danger){ 
 					$(this).focus();
 					danger = true;
