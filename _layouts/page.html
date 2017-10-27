@@ -26,8 +26,7 @@ function initApp() {
           document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
           document.getElementById('userNameMenu').textContent = displayName;
       }else{
-        window.location = "{{ site.url }}";
-      }
+        window.location = "{{ site.url }}/armada/tambah/?success=1";
   });
 }
 </script>

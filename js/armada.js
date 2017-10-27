@@ -121,7 +121,15 @@ function saveArmada(fleet)
 		fleet_no_rangka	: fleet.fleet_no_rangka,
 	};
 
-	console.log(fleetData);
+	// Get a key for a new F;eet.
+  	var newFleetKey = firebase.database().ref().child('fleets').push().key;
+
+  	// Write the new post's data simultaneously in the posts list and the user's post list.
+	  var updates = {};
+	  updates['/fleets/' + newFleetKey] = fleetData;
+	  updates['/user-fleets/' + uid + '/' + newFleetKey] = fleetData;
+
+	  return firebase.database().ref().update(updates);
 }
 
 function readURL(input,target) {
