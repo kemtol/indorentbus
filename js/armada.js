@@ -78,7 +78,7 @@ jQuery(document).ready(function($)
 			$('.facilities').append('<span class="help-block" style="font-size:11px;">Fasilitas harus dipilih minimal 1.</span>');
 			if(!danger) 
 			{
-				($'#forms-activities').focus();
+				$('#forms-activities').focus();
 				danger = true;
 			}
 		}
