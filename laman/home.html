@@ -143,16 +143,31 @@ permalink: /home/
 <div class="content-mid" class="hide">
 	<!-- CALENDER WIDGET -->
 	<div class="col-md-8">
-		<div style="border-radius:4px;overflow:hidden;">
+		<div style="border-radius:4px;overflow:hidden;background: #fff;box-shadow: 1px 0px 5px #ddd;">
 			<div id="pit-scheduler"></div>
-			<style>#pit-scheduler .row{margin:0px}</style>
+			<style>
+				.progress-bar-striped, .progress-striped .progress-bar{background-image:none}
+				#pit-scheduler{border-bottom: 0.5rem solid #eee;}
+				#pit-scheduler .row{margin:0px;border-bottom: 3px solid #eee;}
+				.pts-column-title-container,.pts-corner-mask,.pts-line-title-container{background-color:#fff}
+				.pts-header{background-color:#fff}
+				.pts-group-header, .pts-main-group-header{background-color:#111}
+				.pts-group-header > i.glyphicon, .pts-corner-mask *, .pts-header-right-container{display:none}
+				.pts-column-element,.pts-main-group-column{border-right:1px solid #eee}
+				.pts-main-group-column>div{border-left:1px solid #f9f9f9}
+				.pts-group-user,.pts-main-group-user{border-bottom:1px solid #eee}
+				.pts-line-title-container, .pts-corner-mask{border-right: 1px solid #fff;background: #f9f9f9;}
+				.pts-line-marker.complete,.pts-line-marker.start,.pts-line-marker.end,.pts-line-marker.middle{border-radius:0px}
+				#header-datetimepicker span.input-group-addon, .pts-btn-day-view, .pts-btn-list-view, .pts-btn-month-view, .pts-btn-next, .pts-btn-previous,.pts-column-element[data-date]:hover{background:#eee}
+				
+			</style>
 			<script>
 			    $(document).ready(function () {
 				$("#pit-scheduler").pitScheduler({
 				    locale: 'en',
 				    defaultDisplay: 'months',
 				    hideEmptyLines: false,
-				    disableLabelsMovement: false,
+				    disableLabelsMovement: true,
 				    defaultGroupName: 'Default group',
 				    defaultDate: '2016-09-01 16:30',
 				    disableNotifications: false,
@@ -172,36 +187,36 @@ permalink: /home/
 				    tasks:  [
 					{
 					    id: 'djJ3d7sjk928S0',
-					    name: 'Jacuzzi access',
-					    description: 'Allows users to access to the jacuzzi',
+					    name: 'Booked',
+					    //description: 'Allows users to access to the jacuzzi',
 					    color: '#fcd720',
-					    tag: 'limited places',
-					    tagColor: '#50d371'
+					    //tag: 'limited places',
+					    //tagColor: '#50d371'
 					},
 					{
 					    id: 'fJD67Bd4jh7',
-					    name: 'SPA access',
-					    description: 'Allows usesr to access to the SPA',
+					    name: 'Maintenance',
+					    //description: 'Allows usesr to access to the SPA',
 					    color: '#E91E63'
 					},
 					{
 					    id: 'dj8aA9nL0Su7',
-					    name: 'Internet access',
-					    description: 'Allows users to access to internet',
+					    name: 'Down Payment',
+					    //description: 'Allows users to access to internet',
 					    color: '#536DFE'
 					},
 					{
 					    id: 'fLKd67zPkj',
-					    name: 'VIP services',
+					    name: 'Order Jalan',
 					    color: '#50d371',
-					    tag: 'Only VIPs',
-					    tagColor: '#d200a5'
+					    //tag: 'Only VIPs',
+					    //tagColor: '#d200a5'
 					}
 				    ],
 				    users: [
 					   {
-					    name: 'Ai WeiWei',
-					    group: 'Group A',
+					    name: 'B 737 NG',
+					    group: 'Big Bus',
 					    tasks: [
 						{
 						    id: 'djJ3d7sjk928S0',
@@ -231,8 +246,8 @@ permalink: /home/
 					    ]
 					},
 					{
-					    name: 'Michel Petrucciani',
-					    group: 'Group A',
+					    name: 'A 320 GIA',
+					    group: 'Big Bus',
 					    tasks: [
 						{
 						    id: 'djJ3d7sjk928S0',
@@ -252,8 +267,8 @@ permalink: /home/
 					    ]
 					},
 					{
-					    name: 'Jimi Hendrix',
-					    group: 'Group B',
+					    name: 'H 3781 SS',
+					    group: 'Middle Bus',
 					    tasks: [
 						{
 						    id: 'djJ3d7sjk928S0',
