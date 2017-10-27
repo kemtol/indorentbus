@@ -49,7 +49,7 @@ jQuery(document).ready(function($)
 			'fleet_engine'		: $('#fleet_engine').val(),
 			'fleet_stnk'		: $('#fleet_stnk').val(),
 			'fleet_no_rangka'	: $('#fleet_no_rangka').val(),
-			'fleet_image'		: $('#fleet_image').val(),
+			'fleet_image'		: $('#preview').attr('src'),
 		};
 
 
@@ -119,7 +119,10 @@ function saveArmada(fleet)
 		fleet_engine	: fleet.fleet_engine,
 		fleet_stnk		: fleet.fleet_stnk,
 		fleet_no_rangka	: fleet.fleet_no_rangka,
+		fleet_image		: fleet.fleet_image,
 	};
+
+	console.log(fleetData);
 
 	// Get a key for a new F;eet.
   	var newFleetKey = firebase.database().ref().child('fleets').push().key;
