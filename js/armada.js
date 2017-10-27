@@ -67,9 +67,15 @@ jQuery(document).ready(function($)
 
 function saveArmada(fleet)
 {
-	console.log(currentUser);
-	console.log(uid);
 	var fleetData = {
-
+		author			: currentUser.displayName,
+		uid				: currentUser.uid,
+		fleet_no		: fleet.fleet_no,
+		fleet_type		: fleet.fleet_type,
+		fleet_seat		: fleet.fleet_seat,
+		fleet_year		: fleet.fleet_year,
+		fleet_engine	: fleet.fleet_engine,
 	};
+
+	console.log(fleetData);
 }
