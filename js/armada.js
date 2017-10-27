@@ -141,7 +141,6 @@ function readURL(input,target) {
 	if (input.files && input.files[0]) {
 		var reader = new FileReader();
 		reader.onload = function (e) {
-			console.log(e.target.result);
 			$(target).attr('src',e.target.result).removeClass('hidden');
 		}
 		
