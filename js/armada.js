@@ -49,22 +49,11 @@ jQuery(document).ready(function($)
 			'fleet_engine'		: $('#fleet_engine').val(),
 		};
 
-		var checked_facility = $('input[name=fleet_facilities]:checked');
-		if(checked_facility.length>0)
-		{
-			facilities = [];
-			checked_facility.each(function(){
-				facilities.push($(this).val());
-			});
-			fleet.fleet_facilities = facilities;
-		}
-
 
 		var danger = false;
 		$('.required').each(function(){
 			if($(this).val()=='')
 			{
-				console.log($(this).parent().find('label').text());
 				$(this).parent().addClass('has-warning has-feedback');
 				$(this).parent().find('.form-control-feedback').removeClass('hidden');
 				$(this).parent().append('<span class="help-block" style="font-size:11px;">'+$(this).parent().find('label').text()+' harus diisi.</span>');
@@ -74,6 +63,21 @@ jQuery(document).ready(function($)
 				}
 			}
 		});
+
+		var checked_facility = $('input[name=fleet_facilities]:checked');
+		if(checked_facility.length>0)
+		{
+			facilities = [];
+			checked_facility.each(function(){
+				facilities.push($(this).val());
+			});
+			fleet.fleet_facilities = facilities;
+		}
+		else
+		{
+			$('.facilities').append('<span class="help-block" style="font-size:11px;">Fasilitas harus dipilih minimal 1.</span>');
+			if(!danger) danger = true;
+		}
 
 		if(!danger)	saveArmada(fleet);
 
