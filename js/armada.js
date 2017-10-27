@@ -65,8 +65,9 @@ jQuery(document).ready(function($)
 			if($(this).val()=='')
 			{
 				console.log($(this).parent().find('label').text());
-				danger = true;
-				return false;
+				$(this).parent().addClass('has-warning has-feedback');
+				$(this).parent().find('.form-control-feedback').removClass('hidden');
+				if(!danger) danger = true;
 			}
 		});
 
