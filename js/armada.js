@@ -49,6 +49,7 @@ jQuery(document).ready(function($)
 			'fleet_engine'		: $('#fleet_engine').val(),
 			'fleet_stnk'		: $('#fleet_stnk').val(),
 			'fleet_no_rangka'	: $('#fleet_no_rangka').val(),
+			'fleet_image'		: $('#fleet_image').val(),
 		};
 
 
@@ -69,6 +70,7 @@ jQuery(document).ready(function($)
 		var checked_facility = $('input[name=fleet_facilities]:checked');
 		if(checked_facility.length>0)
 		{
+			$('.facilities').find('.help-block').remove();
 			facilities = [];
 			checked_facility.each(function(){
 				facilities.push($(this).val());
