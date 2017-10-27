@@ -134,7 +134,7 @@ function saveArmada(fleet)
 
 	  firebase.database().ref().update(updates);
 
-	  window.location = "{{ site.url }}/armada/tambah/?success=1";
+	  //window.location = "{{ site.url }}/armada/tambah/?success=1";
 }
 
 function readURL(input,target) {
