@@ -109,9 +109,30 @@ permalink: /orders/tambah/
 		</div>
 	</div>
 	<div class="col-xs-12 col-lg-8 grid-form">
-		<div class="col-xs-12 content-top-1 quick-btn">
-			<input id="saveForm" name="saveForm" type="submit" value="TAMBAH ORDER">
-		</div>
+		<table class="table">
+                    <tbody>
+                        <tr>
+				<td class="table-img">
+					<select name="fleet_type" id="fleet_type" class="form-control1 required">
+						<option value="">Pilih Jenis</option>
+						<option value="Big Bus" id="big_bus">Big Bus</option>
+						<option value="Family Car" id="family_car">Family Car</option>
+						<option value="Medium Bus" id="medium_bus">Medium Bus</option>
+						<option value="Micro Bus" id="micro_bus">Micro Bus</option>
+					</select>
+				</td>
+				<td>
+					2 Bus
+				</td>
+				<td>
+					3 Hari
+				</td>
+				<td>
+					Rp 2.000.000,-
+				</td>
+                        </tr>
+                    </tbody>
+                </table>
 	</div>
 	<div class="clearfix"></div>
 </form>
