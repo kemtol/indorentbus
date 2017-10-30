@@ -20,9 +20,17 @@ permalink: /orders/tambah/
 		<div class="grid-form1">
 			<h3 id="forms-example" class="">Order Detail</h3>
 			<div class="form-group">
-				<label for="fleet_no">Nomor Plat</label>
-				<input type="text" class="form-control required" id="fleet_no" placeholder="No Plat" name="fleet_no">
+				<label for="nama_customer">Nama Customer</label>
+				<input type="text" class="form-control required" id="nama_customer" placeholder="Nama Customer" name="nama_customer">
 			</div>
+			<div class="col-md-6 form-group1 group-mail">
+      				<label class="control-label ">Departure Date</label>
+				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
+		    	</div>
+			<div class="col-md-6 form-group1 group-mail">
+      				<label class="control-label ">Arrival Date</label>
+				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
+		    	</div>
 			<!--<div class="form-group">
 				<label for="fleet_no">Nomor Plat</label>
 				<input type="text" class="form-control required" id="fleet_no" placeholder="No Plat" name="fleet_no">
@@ -73,7 +81,7 @@ permalink: /orders/tambah/
 				<label for="input_tgl">Tanggal Input</label>
 				<input type="text" class="form-control required" id="input_tgl" placeholder="30/10/2017" name="input_tgl" disabled>
 			</div>
-			<p>Order ID dan Tanggal dihasilkan oleh sistem. Tidak perlu diganti</p>
+			<small>Order ID dan Tanggal dihasilkan oleh sistem. Tidak perlu diganti</small>
 		</div>
 	</div>
 	<!--<div class="col-xs-12 col-lg-8 grid-form">
