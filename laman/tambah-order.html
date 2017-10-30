@@ -23,57 +23,57 @@ permalink: /orders/tambah/
 				<label for="nama_customer">Nama Customer</label>
 				<input type="text" class="form-control required" id="nama_customer" placeholder="Nama Customer" name="nama_customer">
 			</div>
-			<div class="col-md-6 form-group1 group-mail" style="padding-left:0">
+			<div class="col-lg-6 form-group1 group-mail" style="padding-left:0">
       				<label class="control-label ">Departure Date</label>
 				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
 		    	</div>
-			<div class="col-md-6 form-group1 group-mail" style="padding-right:0">
+			<div class="col-lg-6 form-group1 group-mail" style="padding-right:0">
       				<label class="control-label ">Arrival Date</label>
 				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
 		    	</div>
 			<div class="clearfix"></div>
 			<hr/>
-			<div class="form-group col-md-6" style="padding-left:0">
+			<div class="form-group col-lg-6" style="padding-left:0">
 				<label for="rute_dari">Rute Dari</label>
 				<input type="text" class="form-control required" id="rute_dari" placeholder="Misal: Jakarta" name="rute_dari">
 			</div>
-			<div class="form-group col-md-6" style="padding-right:0">
+			<div class="form-group col-lg-6" style="padding-right:0">
 				<label for="rute_tujuan">Rute Tujuan</label>
 				<input type="text" class="form-control required" id="rute_tujuan" placeholder="Misal: Semarang" name="rute_tujuan">
 			</div>
 			<div class="clearfix"></div>
-			<div class="form-group col-md-6" style="padding-left:0">
+			<div class="form-group col-lg-6" style="padding-left:0">
 				<label for="pick_upp">Pick Up Point</label>
 				<input type="text" class="form-control required" id="pick_upp" placeholder="Misal: Masjid Raya Cinere, Jl. Cinere Raya, Cinere ..." name="pick_upp">
 			</div>
-			<div class="form-group col-md-6" style="padding-right:0">
+			<div class="form-group col-lg-6" style="padding-right:0">
 				<label for="sb_time">Standby Time</label>
 				<input type="text" class="form-control required" id="sb_time" placeholder="Misal: 18:00" name="sb_time">
 			</div>
 			<div class="clearfix"></div>
-			<div class="form-group col-md-6" style="padding-left:0">
+			<div class="form-group col-lg-6" style="padding-left:0">
 				<label for="cp">Contact Person</label>
 				<input type="text" class="form-control required" id="cp" placeholder="Contact Person" name="cp">
 			</div>
-			<div class="form-group col-md-6" style="padding-right:0">
+			<div class="form-group col-lg-6" style="padding-right:0">
 				<label for="cd">Crew Detail</label>
 				<input type="text" class="form-control required" id="cd" placeholder="Crew Detail" name="cd">
 			</div>
 			<div class="clearfix"></div>
 			<hr/>
-			<div class="form-group col-md-4" style="padding-left:0">
+			<div class="form-group col-lg-4" style="padding-left:0">
 				<label for="fleet_type">Jenis</label>
 				<select name="fleet_type" id="fleet_type" class="form-control1 required">
 					<option value="">Pilih Jenis</option>
 				<option value="Big Bus" id="big_bus">Big Bus</option><option value="Family Car" id="family_car">Family Car</option><option value="Medium Bus" id="medium_bus">Medium Bus</option><option value="Micro Bus" id="micro_bus">Micro Bus</option></select>
 				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
 			</div>
-			<div class="form-group col-md-4">
+			<div class="form-group col-lg-4">
 				<label for="fleet_seat">Seat</label>
 				<input type="text" class="form-control required" id="fleet_seat" placeholder="Jumlah Seat" name="fleet_seat">
 				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
 			</div>
-			<div class="form-group col-md-4" style="padding-right:0">
+			<div class="form-group col-lg-4" style="padding-right:0">
 				<label for="qty_mobil">Qty</label>
 				<input type="text" class="form-control required" id="qty_mobil" placeholder="Jumlah Mobil" name="qty_mobil">
 			</div>
@@ -102,28 +102,34 @@ permalink: /orders/tambah/
 		<div class="grid-form1">
 			<h3 id="forms-gambar" class="">Detail Pembayaran</h3>
 			<table class="table">
-			    <tbody>
-				<tr>
-					<td class="table-img">
-						<select name="fleet_type" id="fleet_type" class="form-control1 required">
-							<option value="">Pilih Jenis</option>
-							<option value="Big Bus" id="big_bus">Big Bus</option>
-							<option value="Family Car" id="family_car">Family Car</option>
-							<option value="Medium Bus" id="medium_bus">Medium Bus</option>
-							<option value="Micro Bus" id="micro_bus">Micro Bus</option>
-						</select>
-					</td>
-					<td>
-						2 Bus
-					</td>
-					<td>
-						3 Hari
-					</td>
-					<td>
-						Rp 2.000.000,-
-					</td>
-				</tr>
-			    </tbody>
+				<thead>
+					<tr>
+						<th>Jenis Layanan</th>
+						<th>Qty</th>
+						<th>Durasi</th>
+						<th>Tagihan</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="table-img">
+							<select name="fleet_type" id="fleet_type" class="form-control1 required">
+								<option value="">Pilih Jenis</option>
+								<option value="Pariwisata" id="big_bus">Pariwisata</option>
+								<option value="Berlangganan" id="family_car">Berlangganan</option>
+							</select>
+						</td>
+						<td>
+							2 Bus
+						</td>
+						<td>
+							3 Hari
+						</td>
+						<td>
+							Rp 2.000.000,-
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</div>
 	</div>
