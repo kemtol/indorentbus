@@ -23,20 +23,32 @@ permalink: /orders/tambah/
 				<label for="nama_customer">Nama Customer</label>
 				<input type="text" class="form-control required" id="nama_customer" placeholder="Nama Customer" name="nama_customer">
 			</div>
-			<div class="col-md-6 form-group1 group-mail">
+			<div class="col-md-6 form-group1 group-mail" style="padding-left:0">
       				<label class="control-label ">Departure Date</label>
 				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
 		    	</div>
-			<div class="col-md-6 form-group1 group-mail">
+			<div class="col-md-6 form-group1 group-mail" style="padding-right:0">
       				<label class="control-label ">Arrival Date</label>
 				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
 		    	</div>
 			<div class="clearfix"></div>
-			<div class="form-group col-md-6">
+			<div class="form-group col-md-6" style="padding-left:0">
 				<label for="rute_dari">Rute Dari</label>
 				<input type="text" class="form-control required" id="rute_dari" placeholder="Misal: Jakarta" name="rute_dari">
 			</div>
-			<div class="form-group col-md-6">
+			<div class="form-group col-md-6" style="padding-right:0">
+				<label for="rute_tujuan">Rute Tujuan</label>
+				<input type="text" class="form-control required" id="rute_tujuan" placeholder="Misal: Semarang" name="rute_tujuan">
+			</div>
+			<div class="form-group clearfix">
+				<label for="pick_upp">Pick Up Point</label>
+				<input type="text" class="form-control required" id="pick_upp" placeholder="Misal: Masjid Raya Cinere, Jl. Cinere Raya, Cinere ..." name="pick_upp">
+			</div>
+			<div class="form-group col-md-6" style="padding-left:0">
+				<label for="rute_dari">Rute Dari</label>
+				<input type="text" class="form-control required" id="rute_dari" placeholder="Misal: Jakarta" name="rute_dari">
+			</div>
+			<div class="form-group col-md-6" style="padding-right:0">
 				<label for="rute_tujuan">Rute Tujuan</label>
 				<input type="text" class="form-control required" id="rute_tujuan" placeholder="Misal: Semarang" name="rute_tujuan">
 			</div>
