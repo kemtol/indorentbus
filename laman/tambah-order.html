@@ -61,7 +61,7 @@ permalink: /orders/tambah/
 			</div>
 			<div class="clearfix"></div>
 			<hr/>
-			<div class="form-group col-lg-4" style="padding-left:0">
+			<!--<div class="form-group col-lg-4" style="padding-left:0">
 				<label for="fleet_type">Jenis</label>
 				<select name="fleet_type" id="fleet_type" class="form-control1 required">
 					<option value="">Pilih Jenis</option>
@@ -77,7 +77,7 @@ permalink: /orders/tambah/
 				<label for="qty_mobil">Qty</label>
 				<input type="text" class="form-control required" id="qty_mobil" placeholder="Jumlah Mobil" name="qty_mobil">
 			</div>
-			<div class="clearfix"></div>
+			<div class="clearfix"></div>-->
 			<div class="form-group1 ">
 	      			<label class="control-label">Remark</label>
 	      			<textarea placeholder="Remark..." required=""></textarea>
@@ -105,6 +105,8 @@ permalink: /orders/tambah/
 				<thead>
 					<tr>
 						<th>Jenis Layanan</th>
+						<th>Jenis Bus</th>
+						<th>Seat</th>
 						<th>Qty</th>
 						<th>Durasi</th>
 						<th>Tagihan</th>
@@ -112,7 +114,7 @@ permalink: /orders/tambah/
 				</thead>
 				<tbody>
 					<tr>
-						<td class="table-img">
+						<td>
 							<select name="fleet_type" id="fleet_type" class="form-control1 required">
 								<option value="">Pilih Jenis</option>
 								<option value="Pariwisata" id="big_bus">Pariwisata</option>
@@ -120,7 +122,20 @@ permalink: /orders/tambah/
 							</select>
 						</td>
 						<td>
-							2 Bus
+							<div class="form-group col-lg-4" style="padding-left:0">
+								<label for="fleet_type">Jenis</label>
+								<select name="fleet_type" id="fleet_type" class="form-control1 required">
+									<option value="">Pilih Jenis</option>
+									<option value="Big Bus" id="big_bus">Big Bus</option><option value="Family Car" id="family_car">Family Car</option><option value="Medium Bus" id="medium_bus">Medium Bus</option><option value="Micro Bus" id="micro_bus">Micro Bus</option>
+								</select>
+								<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+							</div>
+						</td>
+						<td>
+							<input type="text" class="form-control required" id="fleet_seat" placeholder="Jumlah Seat" name="fleet_seat">
+						</td>
+						<td>
+							<input type="text" class="form-control required" id="qty_mobil" placeholder="Jumlah Mobil" name="qty_mobil">
 						</td>
 						<td>
 							3 Hari
