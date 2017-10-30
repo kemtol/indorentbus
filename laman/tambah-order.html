@@ -100,8 +100,12 @@ permalink: /orders/tambah/
 	</div>
 	<div class="col-xs-12 col-lg-8 grid-form">
 		<div class="grid-form1">
+			<style>
+				#table_quot thead tr th{color:#000}
+				#table_quot .form-control1,#table_quot .form-control,.form-control[disabled]{border:none;background:transparent}
+			</style>
 			<h3 id="forms-gambar" class="">Detail Pembayaran</h3>
-			<table class="table">
+			<table id="table_quot" class="table">
 				<thead>
 					<tr>
 						<th width="20%">Jenis Layanan</th>
@@ -116,28 +120,28 @@ permalink: /orders/tambah/
 					<tr>
 						<td>
 							<select name="fleet_type" id="fleet_type" class="form-control1 required">
-								<option value="">Pilih Jenis</option>
+								<option value="">Jenis Layanan</option>
 								<option value="Pariwisata" id="big_bus">Pariwisata</option>
 								<option value="Berlangganan" id="family_car">Berlangganan</option>
 							</select>
 						</td>
 						<td>
 							<select name="fleet_type" id="fleet_type" class="form-control1 required">
-								<option value="">Pilih Jenis</option>
+								<option value="">Jenis Bus</option>
 								<option value="Big Bus" id="big_bus">Big Bus</option><option value="Family Car" id="family_car">Family Car</option><option value="Medium Bus" id="medium_bus">Medium Bus</option><option value="Micro Bus" id="micro_bus">Micro Bus</option>
 							</select>
 						</td>
 						<td>
-							<input type="text" class="form-control required" id="fleet_seat" placeholder="Jumlah Seat" name="fleet_seat">
+							<input type="text" class="form-control required" id="fleet_seat" placeholder="59" name="fleet_seat">
 						</td>
 						<td>
-							<input type="text" class="form-control required" id="qty_mobil" placeholder="Jumlah Mobil" name="qty_mobil">
+							<input type="text" class="form-control required" id="qty_mobil" placeholder="1" name="qty_mobil">
 						</td>
 						<td>
-							3 Hari
+							<input type="text" class="form-control required" id="durasi" disabled placeholder="3" name="durasi">
 						</td>
 						<td>
-							Rp 2.000.000,-
+							<input type="text" class="form-control required" id="subtotal" disabled placeholder="Rp 2.000.000,-" name="subtotal">
 						</td>
 					</tr>
 				</tbody>
