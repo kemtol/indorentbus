@@ -32,6 +32,7 @@ permalink: /orders/tambah/
 				<input type="date" class="form-control1 ng-invalid ng-invalid-required" ng-model="model.date" required="">
 		    	</div>
 			<div class="clearfix"></div>
+			<hr/>
 			<div class="form-group col-md-6" style="padding-left:0">
 				<label for="rute_dari">Rute Dari</label>
 				<input type="text" class="form-control required" id="rute_dari" placeholder="Misal: Jakarta" name="rute_dari">
@@ -59,56 +60,28 @@ permalink: /orders/tambah/
 				<input type="text" class="form-control required" id="cd" placeholder="Crew Detail" name="cd">
 			</div>
 			<div class="clearfix"></div>
-			<div class="form-group col-md-6" style="padding-left:0">
+			<hr/>
+			<div class="form-group col-md-4" style="padding-left:0">
 				<label for="fleet_type">Jenis</label>
 				<select name="fleet_type" id="fleet_type" class="form-control1 required">
 					<option value="">Pilih Jenis</option>
 				<option value="Big Bus" id="big_bus">Big Bus</option><option value="Family Car" id="family_car">Family Car</option><option value="Medium Bus" id="medium_bus">Medium Bus</option><option value="Micro Bus" id="micro_bus">Micro Bus</option></select>
 				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
 			</div>
-			<div class="form-group col-md-6" style="padding-right:0">
+			<div class="form-group col-md-4">
 				<label for="fleet_seat">Seat</label>
 				<input type="text" class="form-control required" id="fleet_seat" placeholder="Jumlah Seat" name="fleet_seat">
 				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+			</div>
+			<div class="form-group col-md-4" style="padding-right:0">
+				<label for="qty_mobil">Qty</label>
+				<input type="text" class="form-control required" id="qty_mobil" placeholder="Jumlah Mobil" name="qty_mobil">
 			</div>
 			<div class="clearfix"></div>
-			<!--<div class="form-group">
-				<label for="fleet_no">Nomor Plat</label>
-				<input type="text" class="form-control required" id="fleet_no" placeholder="No Plat" name="fleet_no">
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
+			<div class="col-md-12 form-group1 ">
+	      			<label class="control-label">Remark</label>
+	      			<textarea placeholder="Remark..." required=""></textarea>
 			</div>
-			<div class="form-group">
-				<label for="fleet_type">Jenis</label>
-				<select name="fleet_type" id="fleet_type" class="form-control1 required">
-					<option value="">Pilih Jenis</option>
-				</select>
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-			</div>
-			<div class="form-group">
-				<label for="fleet_seat">Seat</label>
-				<input type="text" class="form-control required" id="fleet_seat" placeholder="Jumlah Seat" name="fleet_seat">
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-			</div>
-			<div class="form-group">
-				<label for="fleet_year">Tahun Pembuatan</label>
-				<input type="text" class="form-control required" id="fleet_year" placeholder="Tahun Pembuatan" name="fleet_year">
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-			</div>
-			<div class="form-group">
-				<label for="fleet_engine">Jenis Mesin</label>
-				<input type="text" class="form-control required" id="fleet_engine" placeholder="Jenis Mesin" name="fleet_engine">
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-			</div>
-			<div class="form-group">
-				<label for="fleet_stnk">STNK</label>
-				<input type="text" class="form-control required" id="fleet_stnk" placeholder="STNK" name="fleet_stnk">
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-			</div>
-			<div class="form-group">
-				<label for="fleet_no_rangka">No. Rangka</label>
-				<input type="text" class="form-control required" id="fleet_no_rangka" placeholder="No. Rangka" name="fleet_no_rangka">
-				<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>
-			</div>-->
 		</div>
 	</div>
 	<div class="col-xs-12 col-lg-3 grid-form">
