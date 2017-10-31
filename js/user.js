@@ -18,7 +18,7 @@ jQuery(document).ready(function($)
 		$(optionRemoved).remove();
 	});
 
-	$('#newFleet').submit(function(event){
+	$('#newUser').submit(function(event){
 		var userData = 
 		{
 			'user_name'			: $('#user_name').val(),
