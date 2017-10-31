@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
 
 });
 
-function createVendor(vendor,createVendor)
+function doVendor(vendor,createVendor)
 {
 	if(createVendor)
 	{
