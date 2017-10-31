@@ -10,7 +10,7 @@ title: INDORENTBUS FMS
 	<input type="text" id="email" name="email" placeholder="Email"/>
 	<input type="password" id="password" name="password" placeholder="Password"/>
 	<input class="for-signup" type="text" id="name" name="name" placeholder="Nama"/>
-  <select name="vendor">
+  <select name="vendor" id="vendor">
     <option value="">Select Vendor</option>
     <option value="bsm">BSM</option>
     <option value="panorama">Panorama</option>
@@ -117,12 +117,20 @@ title: INDORENTBUS FMS
         firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
           var user = firebase.auth().currentUser;
           var name = document.getElementById('name').value;
-
+          var vendor = document.getElementById('vendor').value;
+          var create_vendor = false;
+          if(vendor.length<0) 
+          {
+            vendor = document.getElementById('name_vendor').value;
+            create_vendor = true;
+          }
           user.updateProfile({
             displayName: name,
             photoURL: "https://example.com/jane-q-user/profile.jpg"
           }).then(function() {
           // Update successful.
+
+            doVendor(vendor,create_vendor);
             return;
           }, function(error) {
             // Handle Errors here.
