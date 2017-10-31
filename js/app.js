@@ -13,23 +13,3 @@ firebase.initializeApp(config);
 jQuery(document).ready(function($){
 
 });
-
-function doVendor(vendor,createVendor)
-{
-	if(createVendor)
-	{
-		var vendorData = {
-			vendor_name		: vendor
-		};
-
-		var newVendorKey = firebase.database().ref().child('vendors').push().key;
-		alert (newVendorKey);
-
-		var updates = {};
-		updates['/vendors/' + newVendorKey] = vendorData;
-		updates['/vendors/users'] = currentUser.uid;
-		// updates['/user-fleets/' + uid + '/' + newFleetKey] = fleetData;
-
-		return firebase.database().ref().update(updates);
-	}
-}
