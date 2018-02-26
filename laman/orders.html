@@ -22,7 +22,9 @@ permalink: /orders/
 				<th>TGL BERANGKAT</th>
 				<th>RUTE</th>
 				<th>FLEET</th>
-				<th>STATUS</th>
+				<th>PAYMENT STATUS</th>
+				<th>FLEET STATUS</th>
+				<th>&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -40,11 +42,30 @@ permalink: /orders/
 			    </td>
 				
 			    <td>
-				    <div>PANORAMA / BIG / <a href="">B727ABC</a></div>
-				    <div>PANORAMA / BIG / <a href="">B1234MAC</a></div>
-				    <div>PANORAMA / MEDIUM / <a href="">B212FPI</a></div>
+				    <div>PANORAMA <i class="fa fa-angle-right"></i> BIG <i class="fa fa-angle-right"></i> <a href="">B727ABC</a></div>
+				    <div>PANORAMA <i class="fa fa-angle-right"></i> BIG <i class="fa fa-angle-right"></i> <a href="">B1234MAC</a></div>
+				    <div>PANORAMA <i class="fa fa-angle-right"></i> MEDIUM <i class="fa fa-angle-right"></i> <a href="">B212FPI</a></div>
 			    </td>
 				
+			    <td>
+					<select>
+						<option value="wp">Waiting Payment</option>
+						<option value="dp">DP Received</option>
+						<option value="fp">Payment Received</option>
+						<option value="pnd">Process non DP</option>
+						<option value="cl">Canceled</option>
+					</select>
+			    </td>
+				
+			    <td>
+					<select>
+						<option value="wp">Waiting SPJ</option>
+						<option value="dp">Proceed SPJ</option>
+						<option value="fp">Dispatch</option>
+						<option value="fp">Completed</option>
+					</select>
+			    </td>
+
 			    <td>
 				<a href="" class="fa fa-pencil"></a> <a href="" class="fa fa-times"></a>
 
