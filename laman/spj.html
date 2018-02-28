@@ -16,7 +16,7 @@ permalink: /spj/
 <!--//banner-->
 
 <form action="" id="newOrder" method="post">
-	<div class="col-xs-12 col-lg-5 grid-form">
+	<div class="col-xs-12 col-lg-12 grid-form">
 		<div class="grid-form1">
 			<h3 id="forms-example" class="">Order Detail</h3>
 			<div class="form-group">
@@ -82,115 +82,6 @@ permalink: /spj/
 	      			<label class="control-label">Remark</label>
 	      			<textarea placeholder="Remark..." required=""></textarea>
 			</div>
-		</div>
-	</div>
-	<div class="col-xs-12 col-lg-3 grid-form">
-		<div class="grid-form1 facilities">
-			<h3 id="forms-activities" class="">Submit ID</h3>
-			<div class="form-group">
-				<label for="id_no">Order ID</label>
-				<input type="text" class="form-control required" id="id_no" placeholder="# 093456" name="id_no" disabled>
-			</div>
-			<div class="form-group">
-				<label for="input_tgl">Tanggal Input</label>
-				<input type="text" class="form-control required" id="input_tgl" placeholder="30/10/2017" name="input_tgl" disabled>
-			</div>
-			<small>Order ID dan Tanggal dihasilkan oleh sistem. Tidak perlu diganti</small>
-		</div>
-	</div>
-	<div class="col-xs-12 col-lg-8 grid-form">
-		<div class="grid-form1">
-			<style>
-				#table_quot thead tr th{color:#000;background:#f9f9f9}
-				#table_quot .form-control1,#table_quot .form-control,#table_quot .form-control[disabled]{border:none;background:transparent}
-				#table_quot .form-control1.a1{border:1px solid #ccc;border-radius:0;background:#fff}
-			</style>
-			<h3 id="forms-gambar" class="">Detail Pembayaran</h3>
-			<table id="table_quot" class="table">
-				<thead>
-					<tr>
-						<th width="30%">Jenis Layanan</th>
-						<th width="30%">Jenis Bus</th>
-						<th width="5%">Seat</th>
-						<th width="5%">Qty</th>
-						<th width="5%">Durasi</th>
-						<th width="25%">Tagihan</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="table-row">
-						<td>
-							<select name="fleet_type" id="fleet_type" class="form-control1 required a1">
-								<option value="">Jenis Layanan</option>
-								<option value="Pariwisata" id="big_bus">Pariwisata</option>
-								<option value="Berlangganan" id="family_car">Berlangganan</option>
-							</select>
-						</td>
-						<td>
-							<select name="fleet_type" id="fleet_type" class="form-control1 required a1">
-								<option value="">Jenis Bus</option>
-								<option value="Big Bus" id="big_bus">Big Bus</option><option value="Family Car" id="family_car">Family Car</option><option value="Medium Bus" id="medium_bus">Medium Bus</option><option value="Micro Bus" id="micro_bus">Micro Bus</option>
-							</select>
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="fleet_seat" placeholder="59" name="fleet_seat">
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="qty_mobil" placeholder="1" name="qty_mobil">
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="durasi" disabled placeholder="3" name="durasi">
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="subtotal" disabled placeholder="Rp 2.000.000,-" name="subtotal">
-						</td>
-					</tr>
-					<tr class="table-row">
-						<td>
-							<select name="service_type" id="service_type" class="form-control1 required a1">
-								<option value="">Jenis Layanan</option>
-								<option value="Pariwisata" id="big_bus">Pariwisata</option>
-								<option value="Berlangganan" id="family_car">Berlangganan</option>
-							</select>
-						</td>
-						<td>
-							<select name="fleet_type" id="fleet_type" class="form-control1 required a1">
-								<option value="">Jenis Bus</option>
-								<option value="Big Bus" id="big_bus">Big Bus</option><option value="Family Car" id="family_car">Family Car</option><option value="Medium Bus" id="medium_bus">Medium Bus</option><option value="Micro Bus" id="micro_bus">Micro Bus</option>
-							</select>
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="fleet_seat" placeholder="59" name="fleet_seat">
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="qty_mobil" placeholder="1" name="qty_mobil">
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="durasi" disabled placeholder="3" name="durasi">
-						</td>
-						<td>
-							<input type="text" class="form-control required" id="subtotal" disabled placeholder="Rp 2.000.000,-" name="subtotal">
-						</td>
-					</tr>
-					<tr style="border-top:1px solid #ccc">
-						<td colspan="5" style="text-align:right;color:#111">GRAND TOTAL :</td>
-						<td>Rp 4.000.000,-</td>
-					</tr>
-					<tr>
-						<td colspan="5" style="text-align:right;color:#111">30% Down Payment :</td>
-						<td>Rp 1.200.000,-</td>
-					</tr>
-					<tr>
-						<td colspan="5" style="text-align:right;color:#111">70% Pelunasan :</td>
-						<td>Rp 2.800.000,-</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	<div class="col-xs-12 col-lg-8 grid-form">
-		<div class="col-xs-12 content-top-1 quick-btn">
-			<input id="saveForm" name="saveForm" type="submit" value="INPUT ORDER">
 		</div>
 	</div>
 	<div class="clearfix"></div>
