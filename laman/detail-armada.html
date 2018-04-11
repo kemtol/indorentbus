@@ -28,7 +28,13 @@ permalink: /armada/detail/
 
 	<script type="text/javascript">
 	$(function() {
-	    $('input[name="daterange"]').daterangepicker();
+	    $('input[name="daterange"]').daterangepicker({
+		    "startDate": "04/05/2018",
+		    "endDate": "04/11/2018",
+		    "opens": "left"
+		}, function(start, end, label) {
+		  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+		});
 	});
 	</script>
 	
