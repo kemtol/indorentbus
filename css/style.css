@@ -1742,7 +1742,7 @@ div#home {
     /*font-size: 0.85em;*/
     color: #666;
     border-top: none !important;
-	font-family:"sans-serif";
+	font-family:sans-serif;
 }
 
 /*--inbox--*/
@@ -1847,6 +1847,9 @@ td span.mar{
 	left: -1.5rem;
 	width: calc(100% + 3rem);
 	max-width: unset;
+}
+.table.upscale thead{
+	background:#f9f9f9;
 }
 .form-control2 {
     border: 1px solid #e0e0e0;
