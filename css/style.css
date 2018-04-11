@@ -1840,6 +1840,13 @@ td span.mar{
 .table {
     margin-bottom: 0;
 }
+.table.upscale{
+	position: relative;
+	top: -1.5rem;
+	left: -1.5rem;
+	width: calc(100% + 3rem);
+	max-width: unset;
+}
 .form-control2 {
     border: 1px solid #e0e0e0;
     padding: 5px 8px;
