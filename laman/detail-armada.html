@@ -15,51 +15,20 @@ permalink: /armada/detail/
 </div>
 <!--//banner-->
 
-<div class="col-md-5">
+<div class="col-md-5 grid-form">
 	<div class="col-lg-6 col-xs-12 content-top-1">
-		<div class="col-md-6 top-content">
+		<div class="col-md-12 top-content">
 			<h5>Big Bus</h5>
 			<label>5/25</label>
 		</div>
-		<div class="col-md-6 top-content1">
-			<div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value">25%</span> <canvas height="100" width="100"></canvas></div>
-		</div>
-		<div class="clearfix"> </div>
 	</div>
 	<div class="col-lg-6 col-xs-12 content-top-1">
-		<div class="col-md-6 top-content">
+		<div class="col-md-12 top-content">
 			<h5>Medium Bus</h5>
 			<label>5/10</label>
 		</div>
-		<div class="col-md-6 top-content1">
-			<div id="demo-pie-2" class="pie-title-center" data-percent="50"> <span class="pie-value">50%</span> <canvas height="100" width="100"></canvas></div>
-		</div>
-		<div class="clearfix"> </div>
 	</div>
 	<div class="clearfix"></div>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#demo-pie-1').pieChart({
-				barColor: '#3bb2d0',
-				trackColor: '#eee',
-				lineCap: 'round',
-				lineWidth: 8,
-				onStep: function(from, to, percent) {
-					$(this.element).find('.pie-value').text(Math.round(percent) + '%');
-				}
-			});
-			$('#demo-pie-2').pieChart({
-				barColor: '#fbb03b',
-				trackColor: '#eee',
-				lineCap: 'butt',
-				lineWidth: 8,
-				onStep: function(from, to, percent) {
-					$(this.element).find('.pie-value').text(Math.round(percent) + '%');
-				}
-			});
-		});
-	</script>
 </div>
 
 <div class="col-xs-12 grid-form">
