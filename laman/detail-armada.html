@@ -24,17 +24,15 @@ permalink: /armada/detail/
 </div>
 
 <div class="col-md-8 col-lg-8 grid-form">
-	<div id="simple-calendar"></div>
+	<div id="multi-calendar"></div>
 
 	<script type="text/javascript">
-	  $('#simple-calendar').DatePicker({
 		$('#multi-calendar').DatePicker({
 		  mode: 'multiple',
 		  inline: true,
 		  calendars: 3,
 		  date: [new Date(), new Date() - 172800000, new Date() - 345600000]
 		});
-	  });
 	</script>
 	
 	<div class="grid-form1">
