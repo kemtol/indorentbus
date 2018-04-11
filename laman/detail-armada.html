@@ -24,6 +24,16 @@ permalink: /armada/detail/
 </div>
 
 <div class="col-md-8 col-lg-8 grid-form">
+	<div id="simple-calendar"></div>
+
+	<script type="text/javascript">
+	  $('#simple-calendar').DatePicker({
+	    mode: 'single',
+	    inline: true,
+	    date: new Date()
+	  });
+	</script>
+	
 	<div class="grid-form1">
 		<h3 id="table-fleet-history" class="">Fleet Earning</h3>
 		<div class="col-lg-6 col-xs-12 top-content">
