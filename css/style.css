@@ -1772,41 +1772,41 @@ div#home {
     vertical-align:middle !important; 
     border-top: 1px solid #ddd;
 }
-td.table-text h6{
+.table td.table-text h6{
 	font-size: 1.2em;
 	color:#000;
 }
-td.table-text p{
+.table td.table-text p{
 	font-size:0.9em;
 	line-height: 1.5em;
 	font-family: 'Muli-Regular';
 	color:#999;
 }
-td i{
+.table td i{
 	color:#999;
 }
-td span{
+.table td span{
 	color:#fff;
 	font-size: 0.8em;
 	padding: 4px 7px;
 	font-family: 'Muli-Regular';
 }
-td span.fam{
+.table td span.fam{
 	color:#fff;
 	font-size: 0.8em;
 	padding: 4px 7px;
 	font-family: 'Muli-Regular';
 }
-td span.fam{
+.table td span.fam{
 	background:#3BB2D0;
 }
-td span.ur{
+.table td span.ur{
 	background: #FFA800;
 }
-td span.work{
+.table td span.work{
 	background: #7F8C8D;
 }
-td span.mar{
+.table td span.mar{
 	background: #1ABC9C;
 }
 
