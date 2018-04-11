@@ -29,10 +29,12 @@ permalink: /armada/detail/
 		<span></span>
 		<a href="#">&#9660;</a>
 		</div>
-		<div id="datepicker-calendar"></div>
+		<div id="datepicker-calendar" style="none"></div>
 	</div>
     	<style type="text/css">
-		/* Style the calendar custom widget */
+		/* Style the calendar custom widget
+		** https://github.com/foxrunsoftware/DatePicker
+		*/
 		#date-range {
 		position:relative;
 		}
@@ -73,6 +75,7 @@ permalink: /armada/detail/
 		}
 	</style>
 	<script type="text/javascript">
+		// https://github.com/foxrunsoftware/DatePicker
 		var to = new Date();
 		var from = new Date(to.getTime() - 1000 * 60 * 60 * 24 * 14);
 
