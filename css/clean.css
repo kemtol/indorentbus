@@ -2,8 +2,8 @@
 .datepicker {
   background-color: #F7F7F7;
   border: 1px solid #CCCCCC;
-  /*border-radius: 5px 5px 5px 5px;
-  padding: 10px;*/
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
 }
 
 /* Tighten up the spacing between multiple calendars */
