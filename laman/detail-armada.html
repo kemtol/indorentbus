@@ -24,7 +24,13 @@ permalink: /armada/detail/
 </div>
 
 <div class="col-md-8 col-lg-8 grid-form">
-	<div id="datepicker-calendar"></div>
+	<div id="date-range">
+		<div id="date-range-field">
+		<span></span>
+		<a href="#">&#9660;</a>
+		</div>
+		<div id="datepicker-calendar"></div>
+	</div>
 
 	<script type="text/javascript">
 		var to = new Date();
@@ -38,12 +44,32 @@ permalink: /armada/detail/
 		  current: new Date(to.getFullYear(), to.getMonth() - 1, 1),
 		  onChange: function(dates,el) {
 		    // update the range display
-		    $('#date-range-field span').text(
-		      dates[0].getDate()+' '+dates[0].getMonthName(true)+', '+
-		      dates[0].getFullYear()+' - '+
-		      dates[1].getDate()+' '+dates[1].getMonthName(true)+', '+
-		      dates[1].getFullYear());
+		    $('#date-range-field span').text(dates[0].getDate()+' '+dates[0].getMonthName(true)+', '+dates[0].getFullYear()+' - '+
+						dates[1].getDate()+' '+dates[1].getMonthName(true)+', '+dates[1].getFullYear());
 		  }
+		});
+
+		// initialize the special date dropdown field
+		$('#date-range-field span').text(from.getDate()+' '+from.getMonthName(true)+', '+from.getFullYear()+' - '+
+						to.getDate()+' '+to.getMonthName(true)+', '+to.getFullYear());
+
+		// bind a click handler to the date display field, which when clicked
+		// toggles the date picker calendar, flips the up/down indicator arrow,
+		// and keeps the borders looking pretty
+		$('#date-range-field').bind('click', function(){
+		  $('#datepicker-calendar').toggle();
+		  if($('#date-range-field a').text().charCodeAt(0) == 9660) {
+		    // switch to up-arrow
+		    $('#date-range-field a').html('&#9650;');
+		    $('#date-range-field').css({borderBottomLeftRadius:0, borderBottomRightRadius:0});
+		    $('#date-range-field a').css({borderBottomRightRadius:0});
+		  } else {
+		    // switch to down-arrow
+		    $('#date-range-field a').html('&#9660;');
+		    $('#date-range-field').css({borderBottomLeftRadius:5, borderBottomRightRadius:5});
+		    $('#date-range-field a').css({borderBottomRightRadius:5});
+		  }
+		  return false;
 		});
 	</script>
 	
