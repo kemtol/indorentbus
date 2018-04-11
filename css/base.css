@@ -125,7 +125,8 @@ div.datepicker .datepickerLastView th a.datepickerGoNext {
 }
 /* Compensate for the space lost by not having a previous arrow */
 div.datepicker th a.datepickerMonth {
-  margin-left:20px;
+  /*margin-left:20px;*/
+  margin-left:0px;
 }
 div.datepicker .datepickerFirstView th a.datepickerMonth {
   margin-left:0;
