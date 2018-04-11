@@ -28,9 +28,12 @@ permalink: /armada/detail/
 
 	<script type="text/javascript">
 	  $('#simple-calendar').DatePicker({
-	    mode: 'single',
-	    inline: true,
-	    date: new Date()
+		$('#multi-calendar').DatePicker({
+		  mode: 'multiple',
+		  inline: true,
+		  calendars: 3,
+		  date: [new Date(), new Date() - 172800000, new Date() - 345600000]
+		});
 	  });
 	</script>
 	
