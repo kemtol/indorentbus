@@ -344,7 +344,7 @@ a.dropdown-toggle.dropdown-at {
 }
 
 .content-main {
-    background-color: #F3F3F4;
+    background-color: #f9f9f9;
 	    padding-top: 1em;
 }
 .navbar-right-left{
@@ -539,6 +539,11 @@ i.fa.fa-globe {
 	-ms-border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border:none;
+	background:transparent;
+	box-shadow:none;
+	position:absolute;
+	top:0
 }
 .banner  h2{
 	font-size:0.9em;
@@ -1194,7 +1199,7 @@ i.fa.fa-twitter {
 }
 .grid-form1 h3{
  color: #000;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 1rem;
     border-bottom: 1px solid #ccc;
     width: calc(100% + 3rem);
@@ -2222,6 +2227,12 @@ canvas#polarArea, canvas#radar, canvas#doughnut {
 }
 }
 @media(max-width:768px){
+.banner{
+    top: 5rem;
+    left: 1rem;
+    padding: 0;
+    margin: 0;	
+}
 .content-top-1 {
     padding: 1.5em 2em;
 }
