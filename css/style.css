@@ -1852,10 +1852,15 @@ div#home {
 	left: -1.5rem;
 	width: calc(100% + 3rem);
 	max-width: unset;
+	border-bottom: 1px solid #ddd;
 }
 .table.upscale thead{
-	background:#f9f9f9;
+	background:#eee;
 }
+.table.upscale>thead>tr>th{
+	border:none;
+}
+
 .form-control2 {
     border: 1px solid #e0e0e0;
     padding: 5px 8px;
