@@ -13,77 +13,76 @@ permalink: /list-spj/
 </div>
 <!--//banner-->
 
-<div class="text-right">
-	<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" style="padding: 10px 20px;width: 300px;background: transparent;border: 0;font-size: 0.9rem;text-align: right;margin-bottom: 1rem;" />
-
-	<script type="text/javascript">
-	$(function() {
-	    $('input[name="daterange"]').daterangepicker({
-		    "startDate": "04/05/2018",
-		    "endDate": "04/11/2018",
-		    "opens": "left"
-		}, function(start, end, label) {
-		  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-		});
-	});
-	</script>
-</div>
-
 <div class="col-xs-12 grid-form">
-    <div class="grid-form1">
-	<h3>DAFTAR SPJ</h3>
+    <div class="grid-form1" style="position:relative">
+	<div class="text-right">
+		<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" style="padding: 10px 20px;width: 300px;background: transparent;border: 0;font-size: 0.9rem;text-align: right;/* margin-bottom: 1rem; */">
 
-<table class="table upscale" id="tableSPJ">
-    <thead>
-        <tr>
-          <th>Tanggal</th>
-          <th>Order ID</th>
-          <th>Driver Premi</th>
-          <th>Crew Premi</th>
-          <th>Fuel Cost</th>
-          <th>Additional Cost</th>
-          <th>Km Usage</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="table-row">
-            <td>
-            11/03/2018					    </td>
-            <td>
-            <a href="http://indorentbus.rocktokom.co/order/detail/7">#7</a>
-            </td>
-            <td>
-            Rp 3.000.000					    </td>
-            <td>
-            Rp 250.000					    </td>
-            <td>
-            Rp 500.000					    </td>
-            <td>
-            Rp 200.000					    </td>
-            <td>
-            0 km
-            </td>
-        </tr>	
-        <tr class="table-row">
-            <td>
-            13/03/2018					    </td>
-            <td>
-            <a href="http://indorentbus.rocktokom.co/order/detail/10">#10</a>
-            </td>
-            <td>
-            Rp 300.000					    </td>
-            <td>
-            Rp 0					    </td>
-            <td>
-            Rp 250.000					    </td>
-            <td>
-            Rp 20.000					    </td>
-            <td>
-            0 km
-            </td>
-        </tr>	
-    </tbody>
-</table>
+		<script type="text/javascript">
+		$(function() {
+		    $('input[name="daterange"]').daterangepicker({
+			    "startDate": "04/05/2018",
+			    "endDate": "04/11/2018",
+			    "opens": "left"
+			}, function(start, end, label) {
+			  console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+			});
+		});
+		</script>
+	</div>
+	<h3>DAFTAR SPJ</h3>
+	    
+	<table class="table upscale" id="tableSPJ">
+	    <thead>
+		<tr>
+		  <th>Tanggal</th>
+		  <th>Order ID</th>
+		  <th>Driver Premi</th>
+		  <th>Crew Premi</th>
+		  <th>Fuel Cost</th>
+		  <th>Additional Cost</th>
+		  <th>Km Usage</th>
+		</tr>
+	    </thead>
+	    <tbody>
+		<tr class="table-row">
+		    <td>
+		    11/03/2018					    </td>
+		    <td>
+		    <a href="http://indorentbus.rocktokom.co/order/detail/7">#7</a>
+		    </td>
+		    <td>
+		    Rp 3.000.000					    </td>
+		    <td>
+		    Rp 250.000					    </td>
+		    <td>
+		    Rp 500.000					    </td>
+		    <td>
+		    Rp 200.000					    </td>
+		    <td>
+		    0 km
+		    </td>
+		</tr>	
+		<tr class="table-row">
+		    <td>
+		    13/03/2018					    </td>
+		    <td>
+		    <a href="http://indorentbus.rocktokom.co/order/detail/10">#10</a>
+		    </td>
+		    <td>
+		    Rp 300.000					    </td>
+		    <td>
+		    Rp 0					    </td>
+		    <td>
+		    Rp 250.000					    </td>
+		    <td>
+		    Rp 20.000					    </td>
+		    <td>
+		    0 km
+		    </td>
+		</tr>	
+	    </tbody>
+	</table>
 
     </div>
 </div>
